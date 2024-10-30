@@ -106,7 +106,7 @@ h3, span {
 }
 
 /* Media Queries para pantallas pequeñas (teléfonos) */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 600px) {
     .contenido-banner {
         height: 35vh; /* Reduce la altura en pantallas pequeñas */
     }
