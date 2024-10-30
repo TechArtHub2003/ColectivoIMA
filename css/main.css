@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+body {
+    margin: 0;
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+}
+
+
+/* Banner */
+.contenido-banner {
+    width: 100%;
+    height: 45vh; /* Altura por defecto */
+    margin: auto;
+    text-align: center;
+    overflow: hidden;
+}
+
+#contenedor {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(8, 100%); /* Simplifica la declaración */
+    animation: mover 20s infinite cubic-bezier(0.55, 0.48, 0.37, 0.92);
+}
+#imagen1, #imagen2, #imagen3, #imagen4, #imagen5, #imagen6, #imagen7, #imagen8 {
+    position: relative;
+    width: 100%;
+    height: 45vh; /* Altura por defecto */
+    background-size: cover; /* La imagen cubrirá completamente el espacio disponible */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+#imagen1 {
+    background-image: url(../img/banner/img1.jpg);
+}
+#imagen2 {
+    background-image: url(../img/banner/img2.jpg);
+}
+#imagen3 {
+    background-image: url(../img/banner/img3.jpg);
+}
+#imagen4 {
+    background-image: url(../img/banner/img4.jpg);
+}
+#imagen5 {
+    background-image: url(../img/banner/img5.jpg);
+}
+#imagen6 {
+    background-image: url(../img/banner/img6.jpg);
+}
+#imagen7 {
+    background-image: url(../img/banner/img7.jpg);
+}
+#imagen8 {
+    background-image: url(../img/banner/img8.jpg);
+}
+
+.fondo {
+    position: absolute;
+    background: linear-gradient(#9900ff, #0015ff);
+    width: 100%;
+    height: 100%; /* Ajuste a la altura de la imagen */
+    top: 0;
+    left: 0;
+    opacity: 0.3;
+}
+h3, span {
+    font-size: 25px;
+    position: relative;
+    color: #ffffff;
+    margin: auto;
+    margin-top: 7%;
+}
+
+@keyframes mover {
+    0% {margin-left: 0%;}
+    12.5% {margin-left: 0%;}
+    25% {margin-left: -100%;}
+    37.5% {margin-left: -200%;}
+    50% {margin-left: -300%;}
+    62.5% {margin-left: -400%;}
+    75% {margin-left: -500%;}
+    87.5% {margin-left: -600%;}
+    100% {margin-left: -700%;}
+}
+
+/* Media Queries para pantallas grandes (computadoras) */
+@media screen and (min-width: 1024px) {
+    .contenido-banner {
+        height: 60vh; /* Aumenta la altura para pantallas grandes */
+    }
+    #imagen1, #imagen2, #imagen3, #imagen4, #imagen5, #imagen6, #imagen7, #imagen8 {
+        height: 60vh; /* Ajusta el tamaño de las imágenes */
+        background-size: cover; /* Asegura que la imagen cubra completamente el contenedor */
+        background-position: center; /* Centra la imagen */
+    }
+    .fondo {
+        height: 100%; /* Ajusta la capa de color según el tamaño de la imagen */
+    }
+}
+
+/* Media Queries para pantallas pequeñas (teléfonos) */
+@media screen and (max-width: 767px) {
+    .contenido-banner {
+        height: 35vh; /* Reduce la altura en pantallas pequeñas */
+    }
+    #imagen1, #imagen2, #imagen3, #imagen4, #imagen5, #imagen6, #imagen7, #imagen8 {
+        height: 35vh; /* Ajusta la altura de las imágenes */
+        background-size: cover; /* Mantiene la cobertura de la imagen en móviles */
+        background-position: center; /* Centra la imagen */
+    }
+    .fondo {
+        height: 100%; /* Ajusta la capa de color según el tamaño de la imagen */
+    }
+}
+
+#fun-med {
+    padding: 50px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.orga-fun-med {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logos-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.logo-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+
+.logo-item img {
+    width: 150px; /* Tamaño fijo en ancho */
+    height: 150px; /* Tamaño fijo en alto */
+    object-fit: cover; /* Ajusta la imagen sin distorsionarla */
+    transition: 0.5s;
+}
+
+.logo-item img:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.logo-item h4 {
+    color: #000000;
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+.logo-item a {
+    text-decoration: none; /* Elimina la línea debajo del enlace */
+}
+
+/* Mantener el diseño en dos columnas en dispositivos móviles */
+@media (max-width: 760px) {
+    .logos-container {
+        flex-direction: column; /* Mantiene las imágenes en fila en dispositivos móviles */
+        gap: 10px;
+    }
+}

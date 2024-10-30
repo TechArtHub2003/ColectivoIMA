@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Página Principal</title>
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/colab_IMA.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <img class="logo" src="img/IMA.png" alt="logo">
+        <button class="abrir-menu" id="abrir"><i class="bi bi-arrow-left-square"></i></button>
+        <nav class="nav" id="nav">
+            <button class="cerrar-menu" id="cerrar"><i class="bi bi-arrow-right-square"></i></button>
+            <ul class="nav-list">
+                <li><a href="index.html">Inicio</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <main>
+        <div class="logo-presentation">
+            <div class="logo-item" onclick="openModal('img/colab_IMA/logo1.png', '+52-5569164378', 'https://www.facebook.com/profile.php?id=61567436491164&mibextid=ZbWKwL')">
+                <img src="img/colab_IMA/logo1.png" alt="Logo 1">
+                <p>Rehabilitando tu Salud A.C.</p>
+            </div>
+            <div class="logo-item" onclick="openModal('img/colab_IMA/logo2.png', '+52-5560432340', 'https://www.facebook.com/Amemus.Mx?mibextid=ZbWKwL')">
+                <img src="img/colab_IMA/logo2.png" alt="Logo 2">
+                <p>Amemus</p>
+            </div>
+            <div class="logo-item" onclick="openModal('img/colab_IMA/logo3.png', '+52-5551430100', 'https://www.facebook.com/profile.php?id=100095696015804&mibextid=ZbWKwL')">
+                <img src="img/colab_IMA/logo3.png" alt="Logo 3">
+                <p>Ruta5</p>
+            </div>
+            <div class="logo-item" onclick="openModal('img/colab_IMA/logo4.png', '+52-5618677295', 'https://www.facebook.com/profile.php?id=61550945670576&mibextid=ZbWKwL')">
+                <img src="img/colab_IMA/logo4.png" alt="Logo 4">
+                <p>Escuela Primaria Francisco Villa</p>
+            </div>
+            
+            <!-- Añade más logos aquí -->
+        </div>
+    
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <img id="modal-img" src="" alt="Logo">
+                <p id="modal-title"></p>
+                <button id="modal-button" onclick="goToPage()">Ir a la página</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="logo-container">
+            <a href="">
+                <img src="img/tha.png" alt="TechArt Hub">
+            </a>
+        </div>        
+        <div class="icon">
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-tiktok"></i></a>
+        </div>
+    </footer>
+
+    <script src="js/header.js"></script>
+    <script src="js/colab_IMA.js"></script>
+    
+</body>
+</html>

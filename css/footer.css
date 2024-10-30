@@ -1,0 +1,54 @@
+.footer{
+    background-color: #DACBF7;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+/* Estilos generales */
+.icon {
+    display: flex;
+    justify-content: space-between;
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+.icon a {
+    align-items: center;
+    color: black;
+    font-size: 1rem;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+}
+
+/* Estilos para computadoras */
+@media (min-width: 768px) {
+    .icon a {
+        margin-right: 2px;
+        font-size: 1.3rem;
+    }
+}
+
+/* Estilos para teléfonos */
+@media (max-width: 767px) {
+    .icon {
+        max-width: 50%;
+    }
+    .icon a {
+        margin-right: 15px;
+        font-size: 1.5rem;
+    }
+}
+
+.logo-container {
+    display: flex; /* Usamos flexbox para centrar el contenido */
+    justify-content: center; /* Centra el contenido horizontalmente */
+}
+
+.logo-container img {
+    align-items: center;
+    max-width: 90px; /* Ajusta el tamaño máximo según tus necesidades */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block; /* Elimina el espacio extra debajo de la imagen */
+}
+
