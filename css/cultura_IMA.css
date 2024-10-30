@@ -124,6 +124,9 @@
   /* Media Queries para adaptabilidad */
   
   @media (max-width: 768px) {
+        p{
+    text-align: justify;
+  }
     .container {
       flex-direction: column;
       height: auto; /* Permite scroll vertical en móviles */
