@@ -124,7 +124,7 @@
   /* Media Queries para adaptabilidad */
   
   @media (max-width: 768px) {
-        p{
+    p{
     text-align: justify;
   }
     .container {
