@@ -170,7 +170,7 @@ h3, span {
 }
 
 /* Mantener el diseño en dos columnas en dispositivos móviles */
-@media (max-width: 760px) {
+@media (max-width: 600px) {
     .logos-container {
         flex-direction: column; /* Mantiene las imágenes en fila en dispositivos móviles */
         gap: 10px;
