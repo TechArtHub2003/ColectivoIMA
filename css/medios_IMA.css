@@ -12,7 +12,9 @@
     overflow-y: auto; /* Permitir desplazamiento vertical */
     min-height: 100vh; /* Asegurar que ocupe el alto de la pantalla */
   }
-  
+    p{
+    text-align: justify;
+  }
   /* Contenedor principal */
   .container {
     display: flex;
