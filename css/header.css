@@ -57,7 +57,7 @@ header {
     display: none;
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (550p) {
     .abrir-menu,
     .cerrar-menu {
         display: block;
