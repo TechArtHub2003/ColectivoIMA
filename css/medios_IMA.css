@@ -12,9 +12,10 @@
     overflow-y: auto; /* Permitir desplazamiento vertical */
     min-height: 100vh; /* Asegurar que ocupe el alto de la pantalla */
   }
-    p{
+  p{
     text-align: justify;
   }
+  
   /* Contenedor principal */
   .container {
     display: flex;
@@ -41,8 +42,8 @@
   
   .photo img {
     border-radius: 50%;
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
     object-fit: cover;
     margin-bottom: 1rem;
   }
@@ -86,7 +87,7 @@
   }
   
   .logo img {
-    max-width: 90px;
+    max-width: 11rem;
     margin-right: 1rem;
   }
   
@@ -124,7 +125,7 @@
   /* Media Queries para adaptabilidad */
   
   @media (max-width: 768px) {
-        p{
+      p{
     text-align: justify;
   }
     .container {
@@ -181,7 +182,7 @@
     }
   }
   
-  .additional-info .button {
+  .button {
     display: inline-block;
     padding: 8px 16px; /* Ajuste de padding */
     background-color: #c4d2ff; /* Color de fondo */
@@ -195,12 +196,29 @@
     margin-top: 10px; /* Espacio superior para separarlo del contenido */
   }
   
-  .additional-info .button:hover {
+  .button:hover {
     background-color: #5e5e5e33; /* Color de fondo al hacer hover */
     transform: translateY(-3px); /* Efecto de elevación */
   }
   
-  .additional-info .button:active {
+  .button:active {
     transform: translateY(1px); /* Efecto al hacer clic */
   }
   
+  /* Estilos generales */
+.icon {
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+.icon a {
+  align-items: center;
+  color: black;
+  font-size: 1.5rem;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+}
